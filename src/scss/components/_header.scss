@@ -167,11 +167,11 @@
 
   &__burger-line {
     position: absolute;
-    top: 52%;
+    top: 50%;
     left: 28%;
     opacity: 1;
     width: 16px;
-    height: 2px;
+    height: 3px;
     background-color: var(--white-color);
     border-radius: 15px;
     transition: left 0.3s linear, opacity 0.3s linear;
