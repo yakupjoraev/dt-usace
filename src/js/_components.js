@@ -1,1 +1,2 @@
-console.log('components');
+import "./components/hero-slider"
+
