@@ -1,5 +1,5 @@
 .hero {
-  padding: 80px 0;
+  padding: 20px 0 80px 0;
   margin-bottom: 80px;
 
   @include tablet {
@@ -172,9 +172,82 @@
   // .hero__slider
 
   &__slider {}
+
+  &__slider-bg--top {
+    position: absolute;
+    right: -100px;
+    top: -100px;
+    width: 300px;
+    height: 300px;
+    border-radius: 100%;
+    background: #F3EBFF;
+    filter: blur(50px);
+
+    @include tablet {
+      display: none;
+    }
+  }
+
+  &__slider-bg--bottom {
+    position: absolute;
+    left: -150px;
+    bottom: -150px;
+    width: 537px;
+    height: 537px;
+    border-radius: 100%;
+    background: rgba(217, 226, 255, 0.75);
+    filter: blur(50px);
+
+    @include tablet {
+      display: none;
+    }
+  }
+}
+
+.hero__slider-cirkle--big {
+  position: absolute;
+  left: -90px;
+  bottom: -70px;
+  width: 145px;
+  height: 145px;
+  border-radius: 100%;
+  background: radial-gradient(151.45% 1086.94% at 0% 0%, #B3CCFF 0%, #6EA0EC 49.67%, #3C77F3 100%);
+  z-index: 2;
+
+  @include tablet {
+    left: -40px;
+    bottom: -30px;
+    width: 82px;
+    height: 82px;
+  }
+}
+
+.hero__slider-cirkle--little {
+  position: absolute;
+  left: 30px;
+  bottom: -110px;
+  width: 53px;
+  height: 53px;
+  border-radius: 100%;
+  background: radial-gradient(151.45% 1086.94% at 0% 0%, #B3CCFF 0%, #6EA0EC 49.67%, #3C77F3 100%);
+  filter: blur(2px);
+  z-index: 2;
+
+  @include tablet {
+    left: 50px;
+    bottom: -40px;
+    width: 30px;
+    height: 30px;
+  }
 }
 
 .hero-slider {
+  position: relative;
+
+  @include tablet {
+    width: fit-content;
+    margin: 0 auto;
+  }
 
   // .hero-slider__container
 
