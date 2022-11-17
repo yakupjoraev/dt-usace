@@ -1,0 +1,11 @@
+.section-title {
+  font-weight: 500;
+  font-size: 40px;
+  line-height: 120%;
+  text-align: center;
+  color: var(--black-color);
+
+  @include small-tablet {
+    font-size: 20px;
+  }
+}
