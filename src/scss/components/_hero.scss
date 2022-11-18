@@ -126,6 +126,12 @@
     font-size: 20px;
     line-height: 120%;
     color: var(--white-color);
+    transition: font-size 0.3s ease;
+    transition: 0.3s;
+
+    &:hover {
+      font-size: 24px;
+    }
 
     &::after {
       content: '';
@@ -289,4 +295,67 @@
       height: 250px;
     }
   }
+}
+
+.hero__list {}
+
+.hero__item {
+  position: relative;
+  padding-left: 20px;
+  font-weight: 300;
+  font-size: 22px;
+  line-height: 120%;
+  color: var(--grey-color);
+
+  &:not(:last-child) {
+    margin-bottom: 20px;
+  }
+
+  @include tablet {
+    font-size: 18px;
+
+    &:not(:last-child) {
+      margin-bottom: 10px;
+    }
+  }
+
+  &::after {
+    content: '';
+    position: absolute;
+    top: 10px;
+    left: 0;
+    width: 5px;
+    height: 5px;
+    border-radius: 100%;
+    background-color: var(--grey-color);
+  }
+}
+
+.hero.hero-scientific-work {
+  .hero__slider-cirkle--big {
+    border-radius: 0;
+    background-image: url('../img/star-big.svg');
+    background-repeat: no-repeat;
+    background-size: contain;
+  }
+
+  .hero__slider-cirkle--little {
+    border-radius: 0;
+    background-image: url('../img/star-little.svg');
+    background-repeat: no-repeat;
+    background-size: contain;
+  }
+
+  .hero__slider-bg--bottom {
+    left: auto;
+    right: -150px;
+    bottom: -150px;
+  }
+
+  @include tablet {
+    .hero__inner {
+      row-gap: 50px;
+    }
+  }
+
 }

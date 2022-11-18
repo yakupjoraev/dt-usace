@@ -90,6 +90,34 @@
     }
   }
 
+  &__item--mobile {
+    display: none;
+
+    @include tablet {
+      position: relative;
+      display: flex;
+      padding-top: 20px;
+
+      & .nav__link {
+        display: flex;
+        column-gap: 5px;
+        font-size: 20px;
+        line-height: 23px;
+      }
+
+      &::after {
+        content: '';
+        position: absolute;
+        top: 0;
+        left: 0;
+        right: 0;
+        width: 100%;
+        height: 2px;
+        background: radial-gradient(111% 1155.05% at -11% 0%, #B3CCFF 0%, #6EA0EC 49.67%, #3C77F3 100%);
+      }
+    }
+  }
+
   // .nav__link
 
   &__link {
@@ -97,6 +125,11 @@
     font-size: 14px;
     line-height: 17px;
     color: var(--grey-color);
+    transition: all 0.2s linear;
+
+    &:hover {
+      color: #3C77F3;
+    }
   }
 
   // .nav__link--active
