@@ -212,8 +212,9 @@
 
 .hero__slider-cirkle--big {
   position: absolute;
-  left: -90px;
-  bottom: -70px;
+  left: -90px !important;
+  top: auto !important;
+  bottom: -70px !important;
   width: 145px;
   height: 145px;
   border-radius: 100%;
@@ -230,8 +231,9 @@
 
 .hero__slider-cirkle--little {
   position: absolute;
-  left: 30px;
-  bottom: -110px;
+  left: 30px !important;
+  top: auto !important;
+  bottom: -110px !important;
   width: 53px;
   height: 53px;
   border-radius: 100%;
@@ -240,15 +242,15 @@
   z-index: 2;
 
   @include tablet {
-    left: 50px;
-    bottom: -40px;
+    left: 50px !important;
+    bottom: -40px !important;
     width: 30px;
     height: 30px;
   }
 }
 
 .hero-slider {
-  position: relative;
+  position: relative !important;
 
   @include tablet {
     width: fit-content;

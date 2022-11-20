@@ -752,3 +752,15 @@
     }
   }
 }
+
+.footer.footer--pages .footer__vk-descr {
+  margin-top: 15px;
+  max-width: none;
+}
+
+.footer.footer--pages .section-title {
+
+  @include small-tablet {
+    font-size: 28px;
+  }
+}

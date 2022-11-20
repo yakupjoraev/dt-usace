@@ -40,3 +40,36 @@ import { enableScroll } from '../functions/enable-scroll';
     });
   });
 })();
+
+function activeNavItem() {
+  let navItems = document.querySelectorAll('.nav__link')
+  let navSubItems = document.querySelectorAll('.nav-sublist__link')
+
+
+  function removeClass() {
+      navItems.forEach(navItem => {
+        navItem.classList.remove('nav__link--active')
+  });
+
+  navSubItems.forEach(navSubItem => {
+    navSubItem.parentNode.parentNode.parentNode.classList.remove('nav__link--active')
+});
+  };
+
+  navItems.forEach(navItem => {
+    navItem.addEventListener('click', () => {
+      removeClass()
+      navItem.classList.add('nav__link--active')
+    })
+  });
+
+  navSubItems.forEach(navSubItem => {
+    navSubItem.addEventListener('click', () => {
+      removeClass()
+      navSubItem.parentNode.parentNode.parentNode.classList.add('nav__link--active')
+    })
+  });
+
+}
+
+activeNavItem()
