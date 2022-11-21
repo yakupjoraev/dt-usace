@@ -51,3 +51,15 @@ function graduatesParallax() {
 
 graduatesParallax();
 
+function studentsParallax() {
+  const container = document.querySelector('.students')
+
+  if (!container) {
+    return null
+  }
+
+  const students = document.getElementById('students');
+  const parallax = new Parallax(students);
+}
+
+studentsParallax();
