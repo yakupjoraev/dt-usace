@@ -38,3 +38,16 @@ function teachersParallax() {
 
 teachersParallax();
 
+function graduatesParallax() {
+  const container = document.querySelector('.graduates')
+
+  if (!container) {
+    return null
+  }
+
+  const graduates = document.getElementById('graduates');
+  const parallax = new Parallax(graduates);
+}
+
+graduatesParallax();
+
