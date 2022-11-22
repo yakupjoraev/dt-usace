@@ -1,0 +1,184 @@
+.students {
+
+  // .students__inner
+
+  &__inner {}
+
+  // .students__title
+
+  &__title {
+    margin-bottom: 10px;
+    text-align: center;
+    font-weight: 700;
+    font-size: 55px;
+    line-height: 120%;
+
+    @media (max-width: 1200px) {
+      font-size: 45px;
+    }
+
+    @media (max-width:700px) {
+      font-size: 35px;
+    }
+  }
+
+  // .students__descr
+
+  &__descr {
+    margin-bottom: 45px;
+    text-align: center;
+    font-weight: 500;
+    font-size: 20px;
+    line-height: 120%;
+
+    @media (max-width:700px) {
+      font-size: 18px;
+      margin-bottom: 20px;
+    }
+  }
+
+  // .students__subtitle
+
+  &__subtitle {
+    margin-bottom: 60px;
+    text-align: center;
+    font-weight: 600;
+    font-size: 40px;
+    line-height: 120%;
+
+    @include tablet {
+      font-size: 30px;
+      margin-bottom: 40px;
+    }
+
+    @media (max-width:700px) {
+      font-size: 22px;
+      margin-bottom: 20px;
+    }
+  }
+
+  // .students__slider
+
+  &__slider {
+    max-width: 90%;
+    margin: 0 auto;
+    margin-bottom: 80px;
+
+    @media (max-width:700px) {
+      max-width: 100%;
+      margin-bottom: 50px;
+    }
+  }
+}
+
+.slider-students {
+  // .slider-students__container-1
+
+  &__container-1,
+  &__container-2,
+  &__container-3,
+  &__container-4 {
+    overflow: initial;
+  }
+
+  // .slider-students__slide
+
+  &__slide {
+    padding: 24px 0;
+    background: radial-gradient(111% 1155.05% at -11% 0%, rgba(179, 204, 255, 0.15) 0%, rgba(110, 160, 236, 0.15) 49.67%, rgba(60, 119, 243, 0.15) 100%);
+    border-radius: 25px;
+    overflow: hidden;
+
+    @media (max-width:700px) {
+      padding: 10px 0;
+    }
+  }
+
+  // .slider-students__img
+
+  &__img {
+    padding: 0 24px;
+    margin-bottom: 15px;
+    text-align: center;
+
+    img {
+      max-width: 996px;
+      width: 100%;
+      // height: 549px;
+      border-radius: 25px;
+
+      @media (max-width:700px) {
+        max-width: 100%;
+      }
+    }
+
+    @media (max-width:700px) {
+      padding: 0 10px;
+      margin-bottom: 10px;
+    }
+  }
+
+  // .slider-students__descr
+
+  &__descr {
+    padding: 0 24px;
+    text-align: center;
+    font-weight: 400;
+    font-size: 20px;
+    line-height: 120%;
+    color: var(--black-color);
+
+    @media (max-width:700px) {
+      font-size: 16px;
+      padding: 0 10px;
+    }
+  }
+
+}
+
+.slider-students__wrapper {
+  margin-bottom: 40px;
+
+  @media (max-width:700px) {
+    margin-bottom: 20px;
+  }
+}
+
+
+.slider-students-next-1,
+.slider-students-next-2,
+.slider-students-next-3,
+.slider-students-next-4 {
+  position: absolute;
+  right: -5%;
+  top: 50%;
+  transform: translateY(-50%);
+
+  @media (max-width: 1300px) {
+    right: -2%;
+  }
+
+  @media (max-width: 1200px) {
+    display: none;
+  }
+}
+
+.slider-students-prev-1,
+.slider-students-prev-2,
+.slider-students-prev-3,
+.slider-students-prev-4 {
+  position: absolute;
+  left: -5%;
+  top: 50%;
+  transform: translateY(-50%);
+
+  @media (max-width: 1300px) {
+    left: -2%;
+  }
+
+  @media (max-width: 1200px) {
+    display: none;
+  }
+}
+
+.slider-graduates-pagination {}
