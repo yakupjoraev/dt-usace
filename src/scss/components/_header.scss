@@ -78,7 +78,7 @@
 
   &__item {
     &:not(:last-child) {
-      margin-right: 15px;
+      margin-right: 10px;
     }
 
     &:nth-child(4) .nav__link-list {
@@ -135,8 +135,8 @@
 
   &__link {
     padding: 7px 22px;
-    font-weight: 300;
-    font-size: 14px;
+    font-weight: 400;
+    font-size: 16px;
     line-height: 17px;
     color: var(--grey-color);
     border-radius: 15px;

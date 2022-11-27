@@ -102,3 +102,16 @@ function forEntrantsParallax() {
 }
 
 forEntrantsParallax();
+
+function appealParallax() {
+  const container = document.querySelector('.appeal')
+
+  if (!container) {
+    return null
+  }
+
+  const  appeal = document.getElementById('appeal');
+  const parallax = new Parallax( appeal);
+}
+
+appealParallax();
