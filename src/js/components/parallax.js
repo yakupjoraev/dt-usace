@@ -13,7 +13,7 @@ function contactsFooter() {
 contactsFooter();
 
 function heroParallax() {
-  const container = document.querySelector('.hero')
+  const container = document.querySelector('.hero-main')
 
   if (!container) {
     return null
@@ -77,3 +77,15 @@ function disciplinesStudiedParallax() {
 
 disciplinesStudiedParallax();
 
+function scientificWorkParallax() {
+  const container = document.querySelector('.scientific-work')
+
+  if (!container) {
+    return null
+  }
+
+  const scientificWork = document.getElementById('scientific-work');
+  const parallax = new Parallax(scientificWork);
+}
+
+scientificWorkParallax();
