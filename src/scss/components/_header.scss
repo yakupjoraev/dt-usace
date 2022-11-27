@@ -339,3 +339,7 @@
   align-items: center;
   column-gap: 10px;
 }
+
+.nav-sublist__link.nav__link--active {
+  color: var(--white-color);
+}

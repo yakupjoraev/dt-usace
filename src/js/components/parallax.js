@@ -63,3 +63,17 @@ function studentsParallax() {
 }
 
 studentsParallax();
+
+function disciplinesStudiedParallax() {
+  const container = document.querySelector('.disciplines-studied')
+
+  if (!container) {
+    return null
+  }
+
+  const disciplinesStudied = document.getElementById('disciplines-studied');
+  const parallax = new Parallax(disciplinesStudied);
+}
+
+disciplinesStudiedParallax();
+

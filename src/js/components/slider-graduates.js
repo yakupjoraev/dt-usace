@@ -105,3 +105,31 @@ function sliderStudents() {
 }
 
 sliderStudents();
+
+
+function sliderDisciplines() {
+  const container = document.querySelector('.disciplines-slider__container')
+
+  if (!container) {
+    return null
+  }
+
+  Swiper.use([EffectFade, Navigation, Pagination]);
+  const swiperDisciplines = new Swiper('.disciplines-slider__container', {
+    slidesPerView: 'auto',
+    centeredSlides: true,
+    cssMode: true,
+    navigation: {
+      nextEl: ".disciplines-slider-next",
+      prevEl: ".disciplines-slider-prev",
+    },
+    pagination: {
+      el: ".slider-graduates-pagination",
+      clickable: true,
+    },
+    mousewheel: true,
+    keyboard: true,
+  });
+}
+
+sliderDisciplines();
