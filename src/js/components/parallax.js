@@ -89,3 +89,16 @@ function scientificWorkParallax() {
 }
 
 scientificWorkParallax();
+
+function forEntrantsParallax() {
+  const container = document.querySelector('.for-entrants')
+
+  if (!container) {
+    return null
+  }
+
+  const forEntrants = document.getElementById('for-entrants');
+  const parallax = new Parallax(forEntrants);
+}
+
+forEntrantsParallax();
