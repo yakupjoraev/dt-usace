@@ -1,0 +1,330 @@
+<!DOCTYPE html>
+<html lang="ru" class="page">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="shortcut icon" href="logo-header.ico" type="image/x-icon">
+  <link rel="shortcut icon" href="logo-header.svg" type="image/x-icon">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <meta name="theme-color" content="#111111">
+  <title>Главная</title>
+  <link rel="preload" href="fonts/RubikLight.woff2" as="font" type="font/woff2" crossorigin>
+  <link rel="preload" href="fonts/RubikRegular.woff2" as="font" type="font/woff2" crossorigin>
+  <link rel="preload" href="fonts/RubikMedium.woff2" as="font" type="font/woff2" crossorigin>
+  <link rel="preload" href="fonts/RubikBold.woff2" as="font" type="font/woff2" crossorigin>
+  <link rel="stylesheet" href="css/vendor.css">
+  <link rel="stylesheet" href="css/main.css">
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/parallax/3.1.0/parallax.min.js"></script>
+  <script defer src="js/main.js"></script>
+</head>
+
+<body class="page__body index-page">
+  <div class="site-container">
+    <header class="header">
+  <div class="container">
+    <div class="header__inner">
+      <nav class="nav" title="Главное меню" data-menu>
+        <button class="nav__burger" type="button" data-burger>
+          <!-- <img loading="lazy" src="img/svg/burger-icon.svg" class="nav__burger-image" width="" height="" alt=""> -->
+          <span class="nav__burger-line"></span>
+        </button>
+        <a class="nav__logo nav__logo--right" href="#">
+          <img loading="lazy" src="img/svg/logo-header.svg" class="nav__logo-image" width="78" height="74"
+            alt="логотип Кафедра Цифровые технологии в урбанистике, архитектуре и строительстве (ЦТУАС)">
+        </a>
+        <ul class="nav__list">
+          <li data-menu-item class="nav__item"><a href="index.html" class="nav__link">Главная</a></li>
+          <li data-menu-item class="nav__item"><a href="students.html" class="nav__link">Студентам</a></li>
+          <li data-menu-item class="nav__item">
+            <a href="for-entrants.html" class="nav__link nav__link-list">
+              Абитуриентам
+
+              <span class="nav__link-arrow">
+                <svg width="7" height="5" viewBox="0 0 7 5" fill="none" xmlns="http://www.w3.org/2000/svg">
+                  <path d="M1 1.25L3.5 3.75" stroke="#444444" stroke-linecap="round" />
+                  <path d="M6 1.25L3.5 3.75" stroke="#444444" stroke-linecap="round" />
+                </svg>
+              </span>
+            </a>
+            <ul class="nav-sublist">
+              <li class="nav-sublist__item">
+                <a class="nav-sublist__link" href="disciplines-studied.html">
+                  Чему мы обучаем
+                </a>
+              </li>
+
+              <li class="nav-sublist__item">
+                <a class="nav-sublist__link" href="for-entrants.html">
+                  Бюджетные места
+                </a>
+              </li>
+            </ul>
+          </li>
+          <li class="nav__item">
+            <a href="teachers.html" class="nav__link nav__link-list  nav__link--active">
+              О кафедре
+
+              <span class="nav__link-arrow">
+                <svg width="7" height="5" viewBox="0 0 7 5" fill="none" xmlns="http://www.w3.org/2000/svg">
+                  <path d="M1 1.25L3.5 3.75" stroke="#444444" stroke-linecap="round" />
+                  <path d="M6 1.25L3.5 3.75" stroke="#444444" stroke-linecap="round" />
+                </svg>
+              </span>
+            </a>
+
+            <ul class="nav-sublist">
+              <li class="nav-sublist__item">
+                <a class="nav-sublist__link" href="graduates.html">
+                  Выпускники
+                </a>
+              </li>
+
+              <li class="nav-sublist__item">
+                <a class="nav-sublist__link nav__link--active" href="teachers.html">
+                  Преподаватели
+                </a>
+              </li>
+            </ul>
+          </li>
+          <li data-menu-item class="nav__item"><a href="scientific-work.html" class="nav__link">Научная работа</a></li>
+          <li data-menu-item class="nav__item"><a href="contacts.html" class="nav__link">Контакты</a></li>
+          <li data-menu-item class="nav__item nav__item--mobile">
+            <a href="#" class="nav__link">
+              <p class="nav__link-text">
+                Наше<br> сообщество<br> ВКонтакте
+              </p>
+
+              <img class="nav__link-img" src="./img/nav-vk.svg" alt="Ссылка со соц сеть Вконтакте">
+            </a>
+          </li>
+        </ul>
+
+        <a class="nav__logo" href="#">
+          <img loading="lazy" src="img/svg/logo-header-2.svg" class="nav__logo-image" width="78" height="74"
+            alt="логотип Волгоградский государственный технический университет">
+        </a>
+      </nav>
+    </div>
+  </div>
+</header>
+
+    <main class="main">
+      <section class="teachers">
+  <div class="container">
+    <div class="teachers__inner">
+      <h1 class="teachers__title">
+        Наши преподаватели
+      </h1>
+
+      <h2 class="teachers__subtitle">
+        Давайте познакомимся поближе!
+      </h2>
+
+      <div class="teachers__img">
+        <img src="./img/teachers/teachers-main.jpg" alt="Наши преподаватели">
+      </div>
+
+      <ul class="teachers__list">
+        <li class="teachers__item">
+          <img class="teachers__item-img" src="./img/teachers/teachers-1.png" alt="Парыгин Данила Сергеевич">
+
+          <p class="teachers__name">
+            Парыгин Данила<br> Сергеевич
+          </p>
+        </li>
+
+        <li class="teachers__item">
+          <img class="teachers__item-img" src="./img/teachers/teachers-2.png" alt="Игнатьев Александр Владимирович">
+
+          <p class="teachers__name">
+            Игнатьев Александр<br> Владимирович
+          </p>
+        </li>
+
+        <li class="teachers__item">
+          <img class="teachers__item-img" src="./img/teachers/teachers-3.png" alt="Садовникова Наталья Петровна">
+
+          <p class="teachers__name">
+            Садовникова Наталья<br> Петровна
+          </p>
+        </li>
+
+        <li class="teachers__item">
+          <img class="teachers__item-img" src="./img/teachers/teachers-4.png" alt="Аникин Антон Викторович">
+
+          <p class="teachers__name">
+            Аникин Антон<br> Викторович
+          </p>
+        </li>
+
+        <li class="teachers__item">
+          <img class="teachers__item-img" src="./img/teachers/teachers-5.png" alt="Ерещенко Татьяна Владимировна">
+
+          <p class="teachers__name">
+            Ерещенко Татьяна<br> Владимировна
+          </p>
+        </li>
+
+        <li class="teachers__item">
+          <img class="teachers__item-img" src="./img/teachers/teachers-6.png" alt="Зыков Дмитрий Станиславович">
+
+          <p class="teachers__name">
+            Зыков Дмитрий<br> Станиславович
+          </p>
+        </li>
+
+        <li class="teachers__item">
+          <img class="teachers__item-img" src="./img/teachers/teachers-7.png" alt="Зорин Владимир Дмитриевич">
+
+          <p class="teachers__name">
+            Зорин Владимир<br> Дмитриевич
+          </p>
+        </li>
+        <li class="teachers__item">
+          <img class="teachers__item-img" src="./img/teachers/teachers-8.png" alt="Рашевский Николай Михайлович">
+
+          <p class="teachers__name">
+            Рашевский Николай<br> Михайлович
+          </p>
+        </li>
+
+        <li class="teachers__item">
+          <img class="teachers__item-img" src="./img/teachers/teachers-9.png" alt="Катеринина Светлана Юрьевна">
+
+          <p class="teachers__name">
+            Катеринина Светлана<br> Юрьевна
+          </p>
+        </li>
+
+        <li class="teachers__item">
+          <img class="teachers__item-img" src="./img/teachers/teachers-10.png" alt="Савина Оксана Владимировна">
+
+          <p class="teachers__name">
+            Савина Оксана<br> Владимировна
+          </p>
+        </li>
+
+        <li class="teachers__item">
+          <img class="teachers__item-img" src="./img/teachers/teachers-11.png" alt="Гуртяков Александр Сергеевич">
+
+          <p class="teachers__name">
+            Гуртяков Александр<br> Сергеевич
+          </p>
+        </li>
+
+        <li class="teachers__item">
+          <img class="teachers__item-img" src="./img/teachers/teachers-12.png" alt="Куликов Михаил Александрович">
+
+          <p class="teachers__name">
+            Куликов Михаил<br> Александрович
+          </p>
+        </li>
+
+        <li class="teachers__item">
+          <img class="teachers__item-img" src="./img/teachers/teachers-13.png" alt="Панов Дмитрий Борисович">
+
+          <p class="teachers__name">
+            Панов Дмитрий<br> Борисович
+          </p>
+        </li>
+
+        <li class="teachers__item">
+          <img class="teachers__item-img" src="./img/teachers/teachers-14.png" alt="Егоров Константин Викторович">
+
+          <p class="teachers__name">
+            Егоров Константин<br> Викторович
+          </p>
+        </li>
+      </ul>
+
+      <div class="teachers__decors">
+        <div class="teachers__decor"></div>
+        <div class="teachers__decor"></div>
+        <div class="teachers__decor"></div>
+        <div class="teachers__decor"></div>
+        <div class="teachers__decor"></div>
+        <div class="teachers__decor"></div>
+      </div>
+
+      <div class="teachers__pictures" data-relative-input="true" id="teachers">
+        <div data-depth="0.3" class="teachers__picture"></div>
+        <div data-depth="0.3" class="teachers__picture"></div>
+        <div data-depth="0.3" class="teachers__picture"></div>
+        <div data-depth="0.3" class="teachers__picture"></div>
+        <div data-depth="0.3" class="teachers__picture"></div>
+        <div data-depth="0.3" class="teachers__picture"></div>
+      </div>
+    </div>
+  </div>
+</section>
+
+    </main>
+
+    <footer class="footer footer--contacts footer--pages">
+  <div class="container">
+    <div class="footer__inner">
+      <h4 class="section-title">
+        Заглядывайте в нашу группу ВКонтакте!
+      </h4>
+
+      <div class="footer__vk-group">
+        <p class="footer__vk-descr">
+          Там очень много полезной и интересной информации
+        </p>
+      </div>
+
+      <div class="socials__item">
+        <div class="socials__item-icon">
+          <svg width="64" height="59" viewBox="0 0 64 59" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <path
+              d="M22.1529 25.9363C24.6565 25.9363 27.1039 25.1757 29.1857 23.7507C31.2674 22.3258 32.8899 20.3004 33.848 17.9308C34.8061 15.5612 35.0568 12.9537 34.5683 10.4382C34.0799 7.92261 32.8743 5.61191 31.1039 3.79828C29.3336 1.98466 27.078 0.749563 24.6224 0.249185C22.1669 -0.251193 19.6217 0.00561884 17.3086 0.987146C14.9955 1.96867 13.0185 3.63083 11.6275 5.76343C10.2366 7.89602 9.49414 10.4033 9.49414 12.9681C9.49414 16.4075 10.8278 19.706 13.2018 22.138C15.5758 24.57 18.7956 25.9363 22.1529 25.9363ZM22.1529 6.48407C23.4047 6.48407 24.6284 6.86435 25.6693 7.57683C26.7101 8.28931 27.5214 9.30198 28.0004 10.4868C28.4795 11.6716 28.6048 12.9753 28.3606 14.2331C28.1164 15.4909 27.5136 16.6462 26.6284 17.5531C25.7432 18.4599 24.6154 19.0774 23.3876 19.3276C22.1599 19.5778 20.8873 19.4494 19.7307 18.9586C18.5742 18.4679 17.5857 17.6368 16.8902 16.5705C16.1947 15.5042 15.8235 14.2506 15.8235 12.9681C15.8235 11.2485 16.4903 9.59921 17.6773 8.38321C18.8643 7.16721 20.4742 6.48407 22.1529 6.48407Z"
+              fill="#231F20" />
+            <path
+              d="M47.4701 32.4205C49.3479 32.4205 51.1834 31.85 52.7447 30.7813C54.306 29.7126 55.5229 28.1936 56.2415 26.4164C56.96 24.6392 57.148 22.6836 56.7817 20.7969C56.4154 18.9102 55.5112 17.1772 54.1834 15.817C52.8556 14.4568 51.164 13.5304 49.3223 13.1552C47.4806 12.7799 45.5717 12.9725 43.8369 13.7086C42.1021 14.4448 40.6193 15.6914 39.5761 17.2908C38.5329 18.8903 37.9761 20.7707 37.9761 22.6944C37.9761 25.2739 38.9763 27.7478 40.7568 29.5717C42.5373 31.3957 44.9521 32.4205 47.4701 32.4205ZM47.4701 19.4523C48.096 19.4523 48.7079 19.6425 49.2283 19.9987C49.7487 20.3549 50.1544 20.8613 50.3939 21.4537C50.6334 22.0461 50.6961 22.698 50.574 23.3268C50.4519 23.9557 50.1505 24.5334 49.7079 24.9868C49.2653 25.4402 48.7014 25.749 48.0875 25.8741C47.4736 25.9992 46.8373 25.935 46.259 25.6896C45.6808 25.4442 45.1865 25.0287 44.8388 24.4955C44.491 23.9624 44.3054 23.3356 44.3054 22.6944C44.3054 21.8345 44.6388 21.0099 45.2323 20.4019C45.8258 19.7939 46.6308 19.4523 47.4701 19.4523Z"
+              fill="#231F20" />
+            <path
+              d="M47.4702 35.662C43.9632 35.666 40.5568 36.8634 37.7863 39.0662C34.6865 35.9031 30.7419 33.7512 26.4498 32.8817C22.1578 32.0123 17.7105 32.4644 13.669 34.1809C9.62737 35.8973 6.17243 38.8014 3.73983 42.5268C1.30723 46.2522 0.00591856 50.6321 0 55.1142C0 55.9741 0.33342 56.7987 0.926913 57.4067C1.5204 58.0147 2.32535 58.3563 3.16468 58.3563C4.004 58.3563 4.80895 58.0147 5.40244 57.4067C5.99594 56.7987 6.32936 55.9741 6.32936 55.1142C6.32936 50.815 7.99646 46.6919 10.9639 43.6519C13.9314 40.6119 17.9561 38.9041 22.1527 38.9041C26.3494 38.9041 30.3741 40.6119 33.3416 43.6519C36.309 46.6919 37.9761 50.815 37.9761 55.1142C37.9761 55.9741 38.3096 56.7987 38.903 57.4067C39.4965 58.0147 40.3015 58.3563 41.1408 58.3563C41.9801 58.3563 42.7851 58.0147 43.3786 57.4067C43.9721 56.7987 44.3055 55.9741 44.3055 55.1142C44.313 51.316 43.3764 47.5783 41.5839 44.2534C42.9824 43.1212 44.6638 42.4153 46.4357 42.2163C48.2076 42.0174 49.9984 42.3334 51.6031 43.1283C53.2078 43.9233 54.5617 45.1649 55.5098 46.7113C56.4579 48.2576 56.9619 50.0461 56.9642 51.8722C56.9642 52.732 57.2976 53.5567 57.8911 54.1647C58.4846 54.7726 59.2896 55.1142 60.1289 55.1142C60.9682 55.1142 61.7732 54.7726 62.3666 54.1647C62.9601 53.5567 63.2936 52.732 63.2936 51.8722C63.2936 47.573 61.6265 43.4499 58.659 40.4099C55.6915 37.3699 51.6668 35.662 47.4702 35.662Z"
+              fill="#231F20" />
+          </svg>
+
+        </div>
+
+        <p class="socials__item-descr">
+          <a class="socials__item-link" href="#">Наше сообщество ВКонтакте</a>
+        </p>
+      </div>
+
+      <div class="footer__bottom">
+        <a class="footer__bottom-logo" href="">
+          <img src="img/logo-footer.png" alt="логотип кафедры">
+        </a>
+
+        <div class="footer__bottom-contact">
+          <p class="footer__bottom-text">
+            Мы на связи с вами
+          </p>
+
+          <a class="footer__bottom-tel" href="tel:+78442969945">+7 (84-42) 96-99-45</a>
+
+        </div>
+      </div>
+
+      <div class="footer__decors">
+        <div class="footer__decor"></div>
+        <div class="footer__decor"></div>
+      </div>
+
+      <div class="footer__pictures" data-relative-input="true" id="scene">
+        <div data-depth="0.6" class="images-parallax footer__picture footer__picture--five"></div>
+        <div data-depth="0.6" class="images-parallax footer__picture footer__picture--six"></div>
+      </div>
+
+    </div>
+  </div>
+</footer>
+
+  </div>
+</body>
+
+</html>
