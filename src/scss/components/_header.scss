@@ -136,7 +136,7 @@
   &__link {
     padding: 7px 22px;
     font-weight: 400;
-    font-size: 16px;
+    font-size: 18px;
     line-height: 17px;
     color: var(--grey-color);
     border-radius: 15px;
@@ -273,6 +273,10 @@
   pointer-events: auto;
 }
 
+.nav__link-arrow {
+  margin-bottom: 4px;
+}
+
 .nav__link-arrow svg path {}
 
 .nav-sublist {
@@ -312,7 +316,7 @@
   padding: 7px 19px;
   width: 150px;
   font-weight: 300;
-  font-size: 16px;
+  font-size: 18px;
   line-height: 17px;
   color: var(--grey-color);
   transition: all 0.2s linear;
@@ -327,6 +331,10 @@
   &.active {
     background: radial-gradient(111% 1155.05% at -11% 0%, #B3CCFF 0%, #6EA0EC 49.67%, #3C77F3 100%);
     color: var(--white-color);
+  }
+
+  @include tablet {
+    font-weight: 400;
   }
 }
 
