@@ -17,6 +17,7 @@
   display: flex;
   justify-content: space-between;
   align-items: center;
+  column-gap: 10px;
 
   &.menu--active .nav__list {
     left: 0;
@@ -350,4 +351,17 @@
 
 .nav-sublist__link.nav__link--active {
   color: var(--white-color);
+}
+
+.nav__logo-image {
+  @include mobile {
+    height: 40px;
+  }
+}
+
+.nav__logo--heigth img {
+  @include mobile {
+    max-width: 100px;
+    object-fit: contain;
+  }
 }

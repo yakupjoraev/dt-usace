@@ -25,7 +25,6 @@ const image = require('gulp-imagemin');
 const {
   readFileSync
 } = require('fs');
-const typograf = require('gulp-typograf');
 const webp = require('gulp-webp');
 const mainSass = gulpSass(sass);
 const webpackStream = require('webpack-stream');
@@ -241,9 +240,6 @@ const htmlInclude = () => {
       prefix: '@',
       basepath: '@file'
     }))
-    .pipe(typograf({
-      locale: ['ru', 'en-US']
-    }))
     .pipe(dest(buildFolder))
     .pipe(browserSync.stream());
 }
@@ -267,8 +263,8 @@ const watchFiles = () => {
 
 const cache = () => {
   return src(`${buildFolder}/**/*.{css,js,svg,png,jpg,jpeg,webp,woff2}`, {
-      base: buildFolder
-    })
+    base: buildFolder
+  })
     .pipe(rev())
     .pipe(revDel())
     .pipe(dest(buildFolder))

@@ -239,6 +239,7 @@ if (window.matchMedia("(max-width: 576px)").matches) {
   const benefitsSwiper = new swiper__WEBPACK_IMPORTED_MODULE_0__["default"]('.benefits__slider', {
     slidesPerView: _popperjs_core__WEBPACK_IMPORTED_MODULE_1__.auto,
     effect: 'fade',
+    loop: true,
     autoplay: {
       delay: 3000
     },
@@ -265,6 +266,7 @@ swiper__WEBPACK_IMPORTED_MODULE_0__["default"].use([swiper__WEBPACK_IMPORTED_MOD
 const heroSwiper = new swiper__WEBPACK_IMPORTED_MODULE_0__["default"]('.hero-slider__container', {
   slidesPerView: 1,
   effect: 'fade',
+  loop: true,
   autoplay: {
     delay: 3000
   },
@@ -384,6 +386,7 @@ function sliderGraduatesSlider() {
     slidesPerView: 'auto',
     centeredSlides: true,
     cssMode: true,
+    loop: true,
     navigation: {
       nextEl: ".slider-graduates-next",
       prevEl: ".slider-graduates-prev"
@@ -407,6 +410,7 @@ function sliderStudents() {
     slidesPerView: 'auto',
     centeredSlides: true,
     cssMode: true,
+    loop: true,
     navigation: {
       nextEl: ".slider-students-next-1",
       prevEl: ".slider-students-prev-1"
@@ -423,6 +427,7 @@ function sliderStudents() {
     slidesPerView: 'auto',
     centeredSlides: true,
     cssMode: true,
+    loop: true,
     navigation: {
       nextEl: ".slider-students-next-2",
       prevEl: ".slider-students-prev-2"
@@ -439,6 +444,7 @@ function sliderStudents() {
     slidesPerView: 'auto',
     centeredSlides: true,
     cssMode: true,
+    loop: true,
     navigation: {
       nextEl: ".slider-students-next-3",
       prevEl: ".slider-students-prev-3"
@@ -455,6 +461,7 @@ function sliderStudents() {
     slidesPerView: 'auto',
     centeredSlides: true,
     cssMode: true,
+    loop: true,
     navigation: {
       nextEl: ".slider-students-next-4",
       prevEl: ".slider-students-prev-4"
@@ -478,6 +485,7 @@ function sliderDisciplines() {
     slidesPerView: 'auto',
     centeredSlides: true,
     cssMode: true,
+    loop: true,
     navigation: {
       nextEl: ".disciplines-slider-next",
       prevEl: ".disciplines-slider-prev"

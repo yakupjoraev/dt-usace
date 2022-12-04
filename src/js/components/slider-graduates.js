@@ -8,22 +8,23 @@ function sliderGraduatesSlider() {
     return null
   }
 
-Swiper.use([EffectFade, Navigation, Pagination]);
-const swiper = new Swiper('.slider-graduates__container', {
-  slidesPerView: 'auto',
-  centeredSlides: true,
-  cssMode: true,
-  navigation: {
-    nextEl: ".slider-graduates-next",
-    prevEl: ".slider-graduates-prev",
-  },
-  pagination: {
-    el: ".slider-graduates-pagination",
-    clickable: true,
-  },
-  mousewheel: true,
-  keyboard: true,
-});
+  Swiper.use([EffectFade, Navigation, Pagination]);
+  const swiper = new Swiper('.slider-graduates__container', {
+    slidesPerView: 'auto',
+    centeredSlides: true,
+    cssMode: true,
+    loop: true,
+    navigation: {
+      nextEl: ".slider-graduates-next",
+      prevEl: ".slider-graduates-prev",
+    },
+    pagination: {
+      el: ".slider-graduates-pagination",
+      clickable: true,
+    },
+    mousewheel: true,
+    keyboard: true,
+  });
 }
 
 sliderGraduatesSlider();
@@ -40,6 +41,7 @@ function sliderStudents() {
     slidesPerView: 'auto',
     centeredSlides: true,
     cssMode: true,
+    loop: true,
     navigation: {
       nextEl: ".slider-students-next-1",
       prevEl: ".slider-students-prev-1",
@@ -57,6 +59,7 @@ function sliderStudents() {
     slidesPerView: 'auto',
     centeredSlides: true,
     cssMode: true,
+    loop: true,
     navigation: {
       nextEl: ".slider-students-next-2",
       prevEl: ".slider-students-prev-2",
@@ -74,6 +77,7 @@ function sliderStudents() {
     slidesPerView: 'auto',
     centeredSlides: true,
     cssMode: true,
+    loop: true,
     navigation: {
       nextEl: ".slider-students-next-3",
       prevEl: ".slider-students-prev-3",
@@ -91,6 +95,7 @@ function sliderStudents() {
     slidesPerView: 'auto',
     centeredSlides: true,
     cssMode: true,
+    loop: true,
     navigation: {
       nextEl: ".slider-students-next-4",
       prevEl: ".slider-students-prev-4",
@@ -119,6 +124,7 @@ function sliderDisciplines() {
     slidesPerView: 'auto',
     centeredSlides: true,
     cssMode: true,
+    loop: true,
     navigation: {
       nextEl: ".disciplines-slider-next",
       prevEl: ".disciplines-slider-prev",

@@ -184,6 +184,9 @@ a {
   -webkit-box-align: center;
   -ms-flex-align: center;
   align-items: center;
+  -webkit-column-gap: 10px;
+  -moz-column-gap: 10px;
+  column-gap: 10px;
 }
 .nav.menu--active .nav__list {
   left: 0;
@@ -534,6 +537,20 @@ a {
 
 .nav-sublist__link.nav__link--active {
   color: var(--white-color);
+}
+
+@media (max-width: 576px) {
+  .nav__logo-image {
+    height: 40px;
+  }
+}
+
+@media (max-width: 576px) {
+  .nav__logo--heigth img {
+    max-width: 100px;
+    -o-object-fit: contain;
+    object-fit: contain;
+  }
 }
 
 .hero {
