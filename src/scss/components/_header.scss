@@ -24,6 +24,16 @@
     opacity: 1;
     user-select: auto;
     pointer-events: auto;
+
+    @include mobile {
+      height: 100%;
+      min-height: 88vh;
+      overflow-y: auto;
+    }
+
+    @media (max-width: 350px) {
+      min-height: 84vh;
+    }
   }
 
   // .nav__logo
@@ -368,5 +378,11 @@
   @include mobile {
     max-width: 100px;
     object-fit: contain;
+  }
+}
+
+.arrow-rotate {
+  span svg {
+    transform: rotate(0deg) !important;
   }
 }

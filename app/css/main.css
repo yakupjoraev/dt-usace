@@ -197,6 +197,18 @@ a {
   user-select: auto;
   pointer-events: auto;
 }
+@media (max-width: 576px) {
+  .nav.menu--active .nav__list {
+    height: 100%;
+    min-height: 88vh;
+    overflow-y: auto;
+  }
+}
+@media (max-width: 350px) {
+  .nav.menu--active .nav__list {
+    min-height: 84vh;
+  }
+}
 @media (max-width: 1024px) {
   .nav__logo {
     width: auto;
@@ -560,6 +572,12 @@ a {
     -o-object-fit: contain;
     object-fit: contain;
   }
+}
+
+.arrow-rotate span svg {
+  -webkit-transform: rotate(0deg) !important;
+  -ms-transform: rotate(0deg) !important;
+  transform: rotate(0deg) !important;
 }
 
 .hero {
