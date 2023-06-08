@@ -59,7 +59,7 @@ function sliderStudents() {
     slidesPerView: 'auto',
     centeredSlides: true,
     cssMode: true,
-    loop: true,
+    loop: false,
     navigation: {
       nextEl: ".slider-students-next-2",
       prevEl: ".slider-students-prev-2",
@@ -77,7 +77,7 @@ function sliderStudents() {
     slidesPerView: 'auto',
     centeredSlides: true,
     cssMode: true,
-    loop: true,
+    loop: false,
     navigation: {
       nextEl: ".slider-students-next-3",
       prevEl: ".slider-students-prev-3",
@@ -95,7 +95,7 @@ function sliderStudents() {
     slidesPerView: 'auto',
     centeredSlides: true,
     cssMode: true,
-    loop: true,
+    loop: false,
     navigation: {
       nextEl: ".slider-students-next-4",
       prevEl: ".slider-students-prev-4",
@@ -113,7 +113,7 @@ function sliderStudents() {
     slidesPerView: 'auto',
     centeredSlides: true,
     cssMode: true,
-    loop: true,
+    loop: false,
     navigation: {
       nextEl: ".slider-students-next-5",
       prevEl: ".slider-students-prev-5",
