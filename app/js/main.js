@@ -473,6 +473,23 @@ function sliderStudents() {
     mousewheel: true,
     keyboard: true
   });
+  swiper__WEBPACK_IMPORTED_MODULE_0__["default"].use([swiper__WEBPACK_IMPORTED_MODULE_0__.EffectFade, swiper__WEBPACK_IMPORTED_MODULE_0__.Navigation, swiper__WEBPACK_IMPORTED_MODULE_0__.Pagination]);
+  const swiperFive = new swiper__WEBPACK_IMPORTED_MODULE_0__["default"]('.slider-students__container-5', {
+    slidesPerView: 'auto',
+    centeredSlides: true,
+    cssMode: true,
+    loop: true,
+    navigation: {
+      nextEl: ".slider-students-next-5",
+      prevEl: ".slider-students-prev-5"
+    },
+    pagination: {
+      el: ".slider-graduates-pagination",
+      clickable: true
+    },
+    mousewheel: true,
+    keyboard: true
+  });
 }
 sliderStudents();
 function sliderDisciplines() {
@@ -13622,3 +13639,4 @@ __webpack_require__.r(__webpack_exports__);
 
 /******/ })()
 ;
+//# sourceMappingURL=main.js.map

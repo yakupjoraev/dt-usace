@@ -107,6 +107,24 @@ function sliderStudents() {
     mousewheel: true,
     keyboard: true,
   });
+
+  Swiper.use([EffectFade, Navigation, Pagination]);
+  const swiperFive = new Swiper('.slider-students__container-5', {
+    slidesPerView: 'auto',
+    centeredSlides: true,
+    cssMode: true,
+    loop: true,
+    navigation: {
+      nextEl: ".slider-students-next-5",
+      prevEl: ".slider-students-prev-5",
+    },
+    pagination: {
+      el: ".slider-graduates-pagination",
+      clickable: true,
+    },
+    mousewheel: true,
+    keyboard: true,
+  });
 }
 
 sliderStudents();
