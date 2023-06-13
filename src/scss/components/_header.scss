@@ -265,6 +265,7 @@
 .nav__link-list:hover~.nav-sublist {
   top: 30px;
   display: block;
+  transform: scale(1);
   opacity: 1;
   user-select: auto;
   pointer-events: auto;
@@ -279,6 +280,7 @@
 .nav-sublist:hover {
   top: 30px;
   display: block;
+  transform: scale(1);
   opacity: 1;
   user-select: auto;
   pointer-events: auto;
@@ -292,16 +294,18 @@
 
 .nav-sublist {
   position: absolute;
-  top: 500%;
+  top: 30px;
   left: 0;
   width: 100%;
+  transform: scale(0);
   opacity: 0;
   user-select: none;
   pointer-events: none;
-  padding: 10px 0;
+  // padding: 10px 0;
   text-align: center;
   background-color: var(--white-color);
   border-radius: 0px 0px 15px 15px;
+  overflow: hidden;
   transition: all 0.3s linear;
 
   @include tablet {
@@ -335,7 +339,7 @@
   line-height: 17px;
   color: var(--grey-color);
   transition: all 0.2s linear;
-  border-radius: 15px;
+  // border-radius: 15px;
   white-space: nowrap;
 
   &:hover {
